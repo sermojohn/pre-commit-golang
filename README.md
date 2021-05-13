@@ -202,10 +202,10 @@ Automates testing, printing a summary of test resutls.
 
 | Hook ID            | Description
 |--------------------|------------
-| `go-test-mod`      | Run `'cd $(mod_root $FILE); gosec [$ARGS] ./...'` for each staged .go file
-| `go-test-pkg`      | Run `'gosec [$ARGS] ./$(dirname $FILE)'` for each staged .go file
-| `go-test-repo-mod` | Run `'cd $(mod_root); gosec [$ARGS] ./...'` for each module in the repo
-| `go-test-repo-pkg` | Run `'gosec [$ARGS] ./...'` in repo root folder
+| `go-test-mod`      | Run `'cd $(mod_root $FILE); go test [$ARGS] ./...'` for each staged .go file
+| `go-test-pkg`      | Run `'go test [$ARGS] ./$(dirname $FILE)'` for each staged .go file
+| `go-test-repo-mod` | Run `'cd $(mod_root); go test [$ARGS] ./...'` for each module in the repo
+| `go-test-repo-pkg` | Run `'go test [$ARGS] ./...'` in repo root folder
 
 ##### Install
 Comes with Golang ( [golang.org](https://golang.org/) )
